@@ -20,6 +20,7 @@ namespace ParsingProtobuff
             var r = Google.Protobuf.CodedOutputStream.ComputeBytesSize(ByteString.CopyFrom(file));
 
             var result = CodedInputStream.CreateWithLimits(stream, 65534, 65534);
+            // необходимо все переделать!
         }
     }
 }
